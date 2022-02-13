@@ -16,6 +16,5 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        working-directory: files
         run:
-          aws s3 sync --delete --region ap-northeast-1 . s3://k47320staticwebsite/
+          aws s3 sync --delete --region --exclude='README.md' ap-northeast-1 . s3://k47320staticwebsite/
