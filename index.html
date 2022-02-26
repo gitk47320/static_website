@@ -2,11 +2,41 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mywebsite</title>
   </head>
   <body>
-    <h1>本サイトについて</h1>
-    <p>テスト</p>
+    <div class = "container">
+      <div class = "main-content">
+        <div class= "introduction">
+          <h1>このサイトについて</h1>
+          <p>なんとなく、Webサイトを公開しようと思ったので作ってみた。適当にコンテンツ追加していく予定</p>
+          <p>HTMLとCSSのみで構築されたシンプルなサイトです。AWS S3の静的サイトホスティングで構築</p>
+        </div>
+        <div class = "about-me">
+        <h1 class = "heading">about me</h1>
+        <div class = "content">
+          <div class = "aboutme">
+            <h2>簡単な経歴</h2>
+            <p>1988年千葉県生まれ。高校卒業までは田舎でのびのびと過ごす</p>
+            <p>筑波大学理工学群工学システム学類入学、同大大学院システム情報工学研究科卒業</p>
+            <p>大学院卒業後はシステム開発屋さんしてます。大手メーカでSIer→Web系受託開発企業→エネルギー系ベンチャーでSaaS開発に従事</p>
+            <p>エンジニアリングよりプロジェクトマネジメントのほうが得意。エンジニア業はその辺の未経験よりはマシかなレベル</p>
+            <h2>SNSとか</h2>
+            <div><a href="https://github.com/gitk47320">github</a></div>
+            <div><a href="https://qiita.com/k47320">Qiita</a></div>
+            <div><a href="https://twitter.com/k47320">Twitter</a></div>
+          </div>
+          <div class = "interesting">
+            <h2>趣味とか興味</h2>
+            <h3>数学</h3>
+            <p>受験数学から学部1年レベルの数学（微分積分、線形代数、確率統計）を適当にかじっている。数検準１級取得。数検１級や統計検定も取得したい</p>
+            <h3>読書</h3>
+            <p>色々なジャンル読むけど、一番集中して読めるのは小説ということに最近気が付く。ミステリー系が好き</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
